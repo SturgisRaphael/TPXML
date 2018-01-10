@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+
+  <title></title>
+</head>
+
+<body>
+  <p>Eclipse</p>
+<![CDATA[ bonjour slash / < > & ]]>
+
+  <table style="width:100%" id="table1">
+    <tr>
+      <th>Firstname</th>
+
+      <th>Lastname</th>
+
+      <th>Age</th>
+    </tr>
+
+    <tr>
+      <td>Jill</td>
+
+      <td>Smith</td>
+
+      <td>50</td>
+    </tr>
+
+    <tr>
+      <td>Eve</td>
+
+      <td>Jackson</td>
+
+      <td>94</td>
+    </tr>
+
+    <tr>
+      <td>Jill</td>
+
+      <td>Smith</td>
+
+      <td>50</td>
+    </tr>
+
+    <tr>
+      <td>Eve</td>
+
+      <td>Jackson</td>
+
+      <td>94</td>
+    </tr>
+  </table><a href="TP1.html#table1">Lien &Atilde;&nbsp; suivre</a>
+</body>
+</html>
