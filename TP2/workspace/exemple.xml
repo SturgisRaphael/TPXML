@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="exemple.xsl"?>
+<!-- commentaire -->
+<stock>
+  <produit>
+    <nom> Découvrir XML </nom>
+    <prix monnaie="Euros"> 50 </prix>
+  </produit>
+  <produit>
+  <nom> CD </nom>
+  <!-- autre commentaire -->
+ </produit>
+ <produit>
+    <nom> Ajout produit </nom>
+    <prix monnaie="Dinar"> 500000000 </prix>
+  </produit>
+</stock>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf8"?>
+<!DOCTYPE stock SYSTEM "exemple.dtd">
+
+<stock>
+  <produit>
+    <nom> Découvrir XML </nom>
+    <prix monnaie="Euros">611</prix>
+  </produit>
+  <produit>
+    <nom> Pro en XML </nom>
+    <prix monnaie="Francs">666</prix>
+  </produit>
+  <produit>
+  <nom> CD </nom>
+ </produit>
+</stock>
