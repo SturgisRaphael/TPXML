@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf8" ?>
+
+<!ELEMENT Master    (UE+, Intervenants)>
+<!ELEMENT UE		(nom, nbCredits, resume, plan, lieuEns, ref-Intervenant+)>
+
+<!ATTLIST UE	id	ID	#REQUIRED>
+
+<!ELEMENT Intervenants	(Intervenant*)>
+<!ELEMENT Intervenant	(nom, adrElect,adrSiteWeb)>
+
+<!ATTLIST Intervenant	id	ID	#REQUIRED>
+
+<!ELEMENT nom			(#PCDATA)>
+<!ELEMENT nbCredits		(#PCDATA)>
+<!ELEMENT resume		(#PCDATA)>
+<!ELEMENT plan			(#PCDATA)>
+<!ELEMENT adrElect		(#PCDATA)>
+<!ELEMENT adrSiteWeb	(#PCDATA)>
+
+<!ELEMENT lieuEns		(Luminy|StCharles)>
+
+<!ELEMENT Luminy		EMPTY>
+<!ELEMENT StCharles		EMPTY>
+
+<!ELEMENT ref-Intervenant	EMPTY>
+<!ATTLIST ref-Intervenant	ref	IDREF	#REQUIRED>
+
+<!ELEMENT Parcours 		(Responsables, nom, resume, Debouches, Semestre*)>
+
+<!ELEMENT Responsables	(ref-Intervenant+)>
+
+<!ELEMENT Debouches		(Debouche*)>
+
+<!ELEMENT Debouche		(#PCDATA)>

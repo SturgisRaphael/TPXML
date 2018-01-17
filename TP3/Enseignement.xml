@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf8" ?>
+<!DOCTYPE Cursus SYSTEM "Enseignement.dtd">
+
+
+<Master>
+  <UE id="abcd1">
+    <nom> XML </nom>
+  	<nbCredits> 30 </nbCredits>
+  	<resume> BLBLBLBLLBLBLBBL </resume>
+  	<plan> B </plan>
+  	<lieuEns><Luminy/></lieuEns>
+  	<ref-Intervenant ref="Wissam"/>
+  </UE>
+  <UE id="azertyuiop">
+	<nom></nom>
+	<nbCredits></nbCredits>
+	<resume></resume>
+	<plan></plan>
+	<lieuEns>
+		<StCharles/>
+	</lieuEns>
+  	<ref-Intervenant ref="Wissam"/>
+  </UE>
+	<Intervenants>
+		<Intervenant id="Wissam">
+			<nom></nom>
+			<adrElect></adrElect>
+			<adrSiteWeb></adrSiteWeb>
+		</Intervenant>
+	</Intervenants>
+</Master>
