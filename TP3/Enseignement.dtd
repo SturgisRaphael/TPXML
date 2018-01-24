@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf8" ?>
 
-<!ELEMENT Master    (UE+, Intervenants)>
+<!ELEMENT Master    (Parcours+, Intervenants)>
 <!ELEMENT UE		(nom, nbCredits, resume, plan, lieuEns, ref-Intervenant+)>
 
 <!ATTLIST UE	id	ID	#REQUIRED>
@@ -12,7 +12,7 @@
 
 <!ELEMENT nom			(#PCDATA)>
 <!ELEMENT nbCredits		(#PCDATA)>
-<!ELEMENT resume		(#PCDATA)>
+<!ELEMENT resume		(p|ul|table)>
 <!ELEMENT plan			(#PCDATA)>
 <!ELEMENT adrElect		(#PCDATA)>
 <!ELEMENT adrSiteWeb	(#PCDATA)>
@@ -32,3 +32,25 @@
 <!ELEMENT Debouches		(Debouche*)>
 
 <!ELEMENT Debouche		(#PCDATA)>
+
+<!ELEMENT Bloc			(Type,UE+)>
+
+<!ELEMENT Type 			(Commun|Optionelle)
+
+<!ELEMENT Commun		EMPTY>
+<!ELEMENT Optionelle	EMPTY>
+
+<!ELEMENT Semestre		(Bloc+)>
+
+<!ELEMENT p				(#PCDATA|b|i|tt)*>
+<!ELEMENT b				(#PCDATA)>
+<!ELEMENT i				(#PCDATA)>
+<!ELEMENT tt			(#PCDATA)>
+
+<!ELEMENT table			(tr+)>
+<!ELEMENT tr			(th+|td*)>
+<!ELEMENT th			(#PCDATA)>
+<!ELEMENT td			(#PCDATA)>
+
+<!ELEMENT ul			(elm*)>
+<!ELEMENT elm			(#PCDATA)>
