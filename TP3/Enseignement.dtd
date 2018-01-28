@@ -17,15 +17,15 @@
 <!ELEMENT adrElect		(#PCDATA)>
 <!ELEMENT adrSiteWeb	(#PCDATA)>
 
-<!ELEMENT lieuEns		(Luminy|StCharles)>
+<!ELEMENT lieuEns		(Luminy|StJeromes)+>
 
 <!ELEMENT Luminy		EMPTY>
-<!ELEMENT StCharles		EMPTY>
+<!ELEMENT StJeromes		EMPTY>
 
 <!ELEMENT ref-Intervenant	EMPTY>
 <!ATTLIST ref-Intervenant	ref	IDREF	#REQUIRED>
 
-<!ELEMENT Parcours 		(Responsables, nom, resume, Debouches, Semestre*)>
+<!ELEMENT Parcours 		(Responsables, nom, resume, Debouches, Semestre+)>
 
 <!ELEMENT Responsables	(ref-Intervenant+)>
 
@@ -35,9 +35,9 @@
 
 <!ELEMENT Bloc			(Type,UE+)>
 
-<!ELEMENT Type 			(Commun|Optionelle)
+<!ELEMENT Type 			(Obligatoires|Optionelle)
 
-<!ELEMENT Commun		EMPTY>
+<!ELEMENT Obligatoires	EMPTY>
 <!ELEMENT Optionelle	EMPTY>
 
 <!ELEMENT Semestre		(Bloc+)>

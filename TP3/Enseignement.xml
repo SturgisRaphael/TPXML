@@ -1,31 +1,440 @@
 <?xml version="1.0" encoding="utf8" ?>
-<!DOCTYPE Cursus SYSTEM "Enseignement.dtd">
-
+<!DOCTYPE Master SYSTEM "Enseignement.dtd">
 
 <Master>
-  <UE id="abcd1">
-    <nom> XML </nom>
-  	<nbCredits> 30 </nbCredits>
-  	<resume> BLBLBLBLLBLBLBBL </resume>
-  	<plan> B </plan>
-  	<lieuEns><Luminy/></lieuEns>
-  	<ref-Intervenant ref="Wissam"/>
-  </UE>
-  <UE id="azertyuiop">
-	<nom></nom>
-	<nbCredits></nbCredits>
-	<resume></resume>
-	<plan></plan>
-	<lieuEns>
-		<StCharles/>
-	</lieuEns>
-  	<ref-Intervenant ref="Wissam"/>
-  </UE>
+	<Parcours>
+		<Responsables>
+			<ref-Intervenant ref="Morin"/>
+		</Responsables>
+		<nom>Tronc Commun</nom>
+		<resume>
+			<p>Premier annee de master est un <b>Tronc commun</b></p>
+		</resume>
+		<Debouches>
+			<Debouche>Master 2</Debouche>
+		</Debouches>
+		<Semestre>
+			<Bloc>
+				<Type>
+					<Obligatoires/>
+				</Type>
+				<UE id="GL">
+					<nom>Genie Logiciel</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<ul>Processus logiciel</ul>
+						<ul>Gestion de projet</ul>
+						<ul>Specification et conception (artefact : notation UML)</ul>
+						<ul>Design patterns</ul>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Arrighi"/>
+				</UE>
+				<UE id="Complexite">
+					<nom>Complexite</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<ul>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</ul>
+						<ul>Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.</ul>
+						<ul>Classes P et NP. Problèmes NP-complets.</ul>
+						<ul>Méthodes de résolution des problèmes NP-Complets.</ul>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Olive"/>
+				</UE>
+				<UE id="Reseaux">
+					<nom>Reseaux</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<ul>Architecture en couches, standard OSI</ul>
+						<ul>Couche physique</ul>
+						<ul>Couche liaison de Données</ul>
+						<ul>Réseau IP</ul>
+						<ul>Algorithmes de routage, routage IP</ul>
+						<ul>Protocole TCP/IP</ul>
+						<ul>Couche Application : HTTP, SMTP, FTP, ...</ul>
+						<ul>Bases des protocoles cryptographiques (terminologie, architecture à clef publique).</ul>
+						<ul>Introduction à la Sécurité des réseau</ul>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Godard"/>
+				</UE>
+				<UE id="PF">
+					<nom>Programmation_Fonctionnelle</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
+
+OCaml
+
+Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
+
+Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
+
+2- Les types
+
+Sommes, types récursifs, polymorphes. Arbres. Filtrage.
+
+3- Sémantique opérationnelle
+
+Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
+
+4- Aspects impératifs
+
+Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
+
+5- Implantation du filtrage en OCaml
+
+Termes formels, substitutions, filtrage</p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Santocanale"/>
+				</UE>
+				<UE id="BDR">
+					<nom>Base de donnees relationnel: Avancee</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>nous sommes désolé, mais nous n'avons pas encore de résumé</p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Sabatier"/>
+				</UE>
+			</Bloc>
+			<Bloc>
+				<Type>
+					<Optionelle/>
+				</Type>
+				<UE id="PL">
+					<nom>Programmation logique</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</ul>
+						<ul>Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.</ul>
+						<ul>Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.</ul>
+						<ul>Règles prédéfinies.</ul>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Stefanini"/>
+				</UE>
+				<UE id="Odi">
+					<nom>Outils de l'internet</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Présentation d'Internet.</ul>
+						<ul>Les langages et les normes sur Internet.</ul>
+						<ul>Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3</ul>
+						<ul>Les applications web.</ul>
+						<ul>Sécurité.</ul>
+						<ul>Les nouvelles et futures technologies</ul>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Contensin"/>
+				</UE>
+				<UE id="SE">
+					<nom>Systeme embarque</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Niebert"/>
+				</UE>
+				<UE id="FIL">
+					<nom>Fondamentaux pour l'ingénierie des langues</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Rappel de théorie des langages</ul>
+						<ul>Algorithmes d'analyse syntaxique pour grammaires ambiguës</ul>
+						<ul>Transducteurs finis et leur application en TAL</ul>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Bechet"/>
+				</UE>
+				<UE id="MED">
+					<nom>Modèles à évènements discrets</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
+
+Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).</p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Reynier"/>
+				</UE>
+				<UE id="Crypto">
+					<nom>Pratique de la cryptographie</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Morin"/>
+				</UE>
+			</Bloc>
+		</Semestre>
+		<Semestre>
+			<Bloc>
+				<Type>
+					<Obligatoires/>
+				</Type>
+				<UE id="Anglais">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="Communication">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="XML">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="ARO">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="PP">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+			</Bloc>
+			<Bloc>
+				<Type>
+					<Optionelle/>
+				</Type>
+				<UE id="TER">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="Stage">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+			</Bloc>
+			<Bloc>
+				<Type>
+					<Optionelle/>
+				</Type>
+				<UE id="AD">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="ISI">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="IFDOBD">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="IA">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="APG">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+				<UE id="IAA">
+					<nom></nom>
+					<nbCredits></nbCredits>
+					<resume>
+						<
+					</resume>
+					<plan></plan>
+					<lieuEns>
+						<
+					</lieuEns>
+					<ref-Intervenant ref=""/>
+				</UE>
+			</Bloc>
+		</Semestre>
+	</Parcours>
+	
 	<Intervenants>
-		<Intervenant id="Wissam">
-			<nom></nom>
-			<adrElect></adrElect>
-			<adrSiteWeb></adrSiteWeb>
+		<Intervenant id="Morin">
+			<nom>Morin</nom>
+			<adrElect>remi.morin@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Arrighi">
+			<nom>Arrighi</nom>
+			<adrElect>pablo.arrighi@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Olive">
+			<nom>Olive</nom>
+			<adrElect>frederic.olive@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Godard">
+			<nom>Godard</nom>
+			<adrElect>emanuel.godard@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Santocanale">
+			<nom>Santocanale</nom>
+			<adrElect>luigi.santocanale@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Sabatier">
+			<nom>Sabatier</nom>
+			<adrElect>claude.sabatier@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Stefanini">
+			<nom>Stefanini</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Contensin">
+			<nom>Contensin</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Niebert">
+			<nom>Niebert</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Bechet">
+			<nom>Bechet</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Reynier">
+			<nom>Reynier</nom>
+			<adrElect>pierre-alain.reynier@lif.univ-mrs.fr</adrElect>
+			<adrSiteWeb>http://pageperso.lif.univ-mrs.fr/~pierre-alain.reynier/</adrSiteWeb>
 		</Intervenant>
 	</Intervenants>
 </Master>
