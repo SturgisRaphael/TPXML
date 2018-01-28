@@ -12,10 +12,14 @@
 
 <!ELEMENT nom			(#PCDATA)>
 <!ELEMENT nbCredits		(#PCDATA)>
-<!ELEMENT resume		(p|ul|table)>
-<!ELEMENT plan			(#PCDATA)>
+<!ELEMENT resume		(p|ul+|table)>
+<!ELEMENT plan			(Cours,TD,TP)>
 <!ELEMENT adrElect		(#PCDATA)>
 <!ELEMENT adrSiteWeb	(#PCDATA)>
+
+<!ELEMENT Cours         (#PCDATA)>
+<!ELEMENT TD            (#PCDATA)>
+<!ELEMENT TP            (#PCDATA)>
 
 <!ELEMENT lieuEns		(Luminy|StJeromes)+>
 
@@ -52,5 +56,5 @@
 <!ELEMENT th			(#PCDATA)>
 <!ELEMENT td			(#PCDATA)>
 
-<!ELEMENT ul			(elm*)>
+<!ELEMENT ul			(elm*|ul)>
 <!ELEMENT elm			(#PCDATA)>
