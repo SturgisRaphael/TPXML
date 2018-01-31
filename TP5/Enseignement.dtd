@@ -13,7 +13,7 @@
 <!ELEMENT nom			(#PCDATA)>
 <!ELEMENT nbCredits		(#PCDATA)>
 <!ELEMENT resume		(p|ul|table)*>
-<!ELEMENT plan			(Cours,TD,TP|EMPTY)>
+<!ELEMENT plan			((Cours,TD,TP)?)>
 <!ELEMENT adrElect		(#PCDATA)>
 <!ELEMENT adrSiteWeb	(#PCDATA)>
 
