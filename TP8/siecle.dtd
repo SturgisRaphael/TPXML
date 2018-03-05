@@ -1,0 +1,54 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT siecle (annee)+>
+<!ATTLIST siecle
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT annee (numero,semaines,mois+)>
+<!ATTLIST annee
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT semaines (semaine)+>
+<!ATTLIST semaines
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT mois (numero,nom,jour+)>
+<!ATTLIST mois
+    xmlns CDATA #FIXED ''
+    id ID #REQUIRED
+    suivant IDREF #IMPLIED>
+
+<!ELEMENT semaine (numero,nom,ref-jour+)>
+<!ATTLIST semaine
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT jour (nom,numero,numero-semaine,numero-annee,personne?)>
+<!ATTLIST jour
+    xmlns CDATA #FIXED ''
+    id ID #REQUIRED
+    suivant IDREF #IMPLIED>
+
+<!ELEMENT ref-jour EMPTY>
+<!ATTLIST ref-jour
+    xmlns CDATA #FIXED ''
+    ref IDREF #REQUIRED>
+
+<!ELEMENT numero-semaine (#PCDATA)>
+<!ATTLIST numero-semaine
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT numero-annee (#PCDATA)>
+<!ATTLIST numero-annee
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT personne (#PCDATA)>
+<!ATTLIST personne
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT numero (#PCDATA)>
+<!ATTLIST numero
+    xmlns CDATA #FIXED ''>
+
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom
+    xmlns CDATA #FIXED ''>

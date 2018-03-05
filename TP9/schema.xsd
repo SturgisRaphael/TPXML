@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        version="1.0"
+>
+
+    <xs:element name="nom">
+        <xs:simpleType>
+            <xs:restriction base="xs:normalizedString">
+                <xs:whiteSpace value='collapse'/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:element name="age" >
+        <xs:simpleType>
+            <xs:restriction base="xs:int">
+                <xs:minExclusive value='0'/>
+                <xs:maxExclusive value='200'/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+
+    <xs:complexType name="typePersonne">
+        <xs:sequence>
+            <xs:element ref="nom" />
+            <xs:element ref="age" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="personne" type="typePersonne" />
+
+</xs:schema>

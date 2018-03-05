@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Master SYSTEM "Enseignement.dtd">
+
+<Master>
+	<Parcours>
+		<Responsables>
+			<ref-Intervenant ref="Morin"/>
+		</Responsables>
+		<nom>Tronc Commun</nom>
+		<resume>
+			<p>Premier annee de master est un <b>Tronc commun</b></p>
+		</resume>
+		<Debouches>
+			<Debouche>Master 2</Debouche>
+		</Debouches>
+		<Semestre>
+			<Bloc>
+				<Type>
+					<Obligatoires/>
+				</Type>
+				<UE id="GL">
+					<nom>Genie Logiciel</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<ul>Processus logiciel</ul>
+						<ul>Gestion de projet</ul>
+						<ul>Specification et conception (artefact : notation UML)</ul>
+						<ul>Design patterns</ul>
+					</resume>
+					<plan>
+						<Cours>20h</Cours>
+						<TD>20h</TD>
+						<TP>20h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Arrighi"/>
+				</UE>
+				<UE id="Complexite">
+					<nom>Complexite</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<ul>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes.</ul>
+						<ul>Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité.</ul>
+						<ul>Classes P et NP. Problèmes NP-complets.</ul>
+						<ul>Méthodes de résolution des problèmes NP-Complets.</ul>
+					</resume>
+					<plan>
+						<Cours>20h</Cours>
+						<TD>20h</TD>
+						<TP>20h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Olive"/>
+				</UE>
+				<UE id="Reseaux">
+					<nom>Reseaux</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<ul>Architecture en couches, standard OSI</ul>
+						<ul>Couche physique</ul>
+						<ul>Couche liaison de Données</ul>
+						<ul>Réseau IP</ul>
+						<ul>Algorithmes de routage, routage IP</ul>
+						<ul>Protocole TCP/IP</ul>
+						<ul>Couche Application : HTTP, SMTP, FTP, ...</ul>
+						<ul>Bases des protocoles cryptographiques (terminologie, architecture à clef publique).</ul>
+						<ul>Introduction à la Sécurité des réseau</ul>
+					</resume>
+					<plan>
+						<Cours>20h</Cours>
+						<TD>20h</TD>
+						<TP>20h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Godard"/>
+				</UE>
+				<UE id="PF">
+					<nom>Programmation_Fonctionnelle</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>1- Introduction à la programmation fonctionnelle, sur l'exemple du langage
+
+OCaml
+
+Expressions, évaluation, types de base. Polymorphisme, ordre supérieur.
+
+Fonctions récursives, filtrage. Les diverses stratégies d'évaluation, application à la programmation d'un opérateur de point fixe.
+
+2- Les types
+
+Sommes, types récursifs, polymorphes. Arbres. Filtrage.
+
+3- Sémantique opérationnelle
+
+Liaisons, environnements, clôtures. Évaluation des fonctions récursives .
+
+4- Aspects impératifs
+
+Exceptions, entrées-sorties, séquencement, fichiers, références, tableaux, enregistrements.
+
+5- Implantation du filtrage en OCaml
+
+Termes formels, substitutions, filtrage</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Santocanale"/>
+				</UE>
+				<UE id="BDR">
+					<nom>Base de donnees relationnel: Avancee</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>nous sommes désolé, mais nous n'avons pas encore de résumé</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Sabatier"/>
+				</UE>
+			</Bloc>
+			<Bloc>
+				<Type>
+					<Optionelle/>
+				</Type>
+				<UE id="PL">
+					<nom>Programmation logique</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Introduction. Forme générale des règles. Effacement, unification, backtracking. Contrôle de l'exécution.</ul>
+						<ul>Listes, arbres et n-uplets. Liste représentée par différence de listes. Ajout en tête et en queue, concaténation.</ul>
+						<ul>Analyseurs syntaxiques. Construction d'un arbre syntaxique. Liste des feuilles d'un arbre. Freeze et analyse par feuille.</ul>
+						<ul>Règles prédéfinies.</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Stefanini"/>
+				</UE>
+				<UE id="Odi">
+					<nom>Outils de l'internet</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Présentation d'Internet.</ul>
+						<ul>Les langages et les normes sur Internet.</ul>
+						<ul>Les protocoles : HTTP, HTTP, SMTP, IMAP, POP3</ul>
+						<ul>Les applications web.</ul>
+						<ul>Sécurité.</ul>
+						<ul>Les nouvelles et futures technologies</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Contensin"/>
+				</UE>
+				<UE id="SE">
+					<nom>Systeme embarque</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Niebert"/>
+				</UE>
+				<UE id="FIL">
+					<nom>Fondamentaux pour l'ingénierie des langues</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Rappel de théorie des langages</ul>
+						<ul>Algorithmes d'analyse syntaxique pour grammaires ambiguës</ul>
+						<ul>Transducteurs finis et leur application en TAL</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Bechet"/>
+				</UE>
+				<UE id="MED">
+					<nom>Modèles à évènements discrets</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>Posséder les notions de base en modélisation et analyse de systèmes dynamiques à événements discrets et particulièrement appréhender le formalisme réseau de
+
+Pétri. Étudier la conception et la spécification des systèmes réactifs à travers l'analyse du modèle à évènements discrets (concurrence, parallélisme, synchronisation).</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Reynier"/>
+				</UE>
+				<UE id="Crypto">
+					<nom>Pratique de la cryptographie</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Morin"/>
+				</UE>
+			</Bloc>
+		</Semestre>
+		<Semestre>
+			<Bloc>
+				<Type>
+					<Obligatoires/>
+				</Type>
+				<UE id="Anglais">
+					<nom>Anglais</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>Un enseignement destiné à confirmer l'utilisation de l'anglais dans le contexte de l'informatique ainsi que dans la pratique professionnelle.</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Molin"/>
+				</UE>
+				<UE id="Communication">
+					<nom>Communication</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>chapitre 1  : Théories de la communication :</p>
+						<ul>
+							<ul>1.1 La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener)</ul>
+							<ul>1.2 La théorie de Palo Alto ( Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli)</ul>
+
+						</ul>
+						<p>chapitre 2 : Rôle de l’interculturalité dans le travail en équipe </p>
+						<ul>
+							<ul>2.1 L’enquête interculturelle de Hofstede pour IBM</ul>
+							<ul>2.2 La gestuelle et le paralangage et la proxémie dans le monde (Hall)</ul>
+
+
+						</ul>
+						<p>chapitre 3 : Notions de management et de travail collaboratif</p>
+						<ul>
+							<ul>3.1 Le travail collaboratif vs le travail coopératif</ul>
+							<ul>3.2 La notion de groupes</ul>
+							<ul>3.3 Les compétences managériales</ul>
+
+						</ul>
+					</resume>
+					<plan>
+						<Cours>15h</Cours>
+						<TD>8h</TD>
+						<TP/>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Réné"/>
+				</UE>
+				<UE id="XML">
+					<nom>XML</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>XML, DTD, XSD</ul>
+						<ul>XPath, XSLT, XQuery</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Massat"/>
+				</UE>
+				<UE id="ARO">
+					<nom>Algorithmique et recherche opérationnelle</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Programmation linéaire.</ul>
+						<ul>Notions et algorithmes de flots.</ul>
+						<ul>Applications (couplage, affectation, transport, ...)</ul>
+						<ul>Programmation dynamique (sac à dos, ordonnancement, ...)</ul>
+						<ul>Algorithmes à performance garantie</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Chepoï"/>
+				</UE>
+				<UE id="PP">
+					<nom>Programmation parrallèle</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						 <p>nous sommes désolé, mais nous n'avons pas encore de résumé.</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Morin"/>
+				</UE>
+			</Bloc>
+			<Bloc>
+				<Type>
+					<Optionelle/>
+				</Type>
+				<UE id="TER">
+					<nom>Projet</nom>
+					<nbCredits>6</nbCredits>
+					<resume>
+						<p>Le but du projet est de mettre en oeuvre, de l'analyse à la programmation, les notions présentées en cours. C'est l'occasion, pour les étudiants, d'utiliser sur un cas pratique, les éléments exposées dans les UE. Travail effectué sous la direction pédagogique d'un enseignant, et donnant lieu à la rédaction d'un mémoire et d'une soutenance orale. </p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Jegou"/>
+				</UE>
+				<UE id="Stage">
+					<nom>Stage de deux mois</nom>
+					<nbCredits>6</nbCredits>
+					<resume/>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+						<StJeromes/>
+					</lieuEns>
+					<ref-Intervenant ref="Jegou"/>
+				</UE>
+			</Bloc>
+			<Bloc>
+				<Type>
+					<Optionelle/>
+				</Type>
+				<UE id="AD">
+					<nom>Algorithmique distribuée</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>Un système distribué est un ensemble d’entités autonomes de calcul (ordinateurs, PDA, processeurs, processus, processus léger, ...) interconnectées et qui peuvent communiquer entre eux. Ce cours est une introduction aux méthodes pour la conception d'algorithmes dans de tels systèmes. Il donne une présentation des différents types de systèmes distribués et des différents problèmes que l'on doit résoudre. Les problèmes abordés sont : l'élection, le consensus, la diffusion, l'exploration, la réplication, l'exploration et le rendez-vous avec des agent mobiles.</p>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Couetoux"/>
+				</UE>
+				<UE id="ISI">
+					<nom>Intégration des systèmes d'information</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Problématique d'intégration des SI</ul>
+						<ul>Architectures et patrons d'intégration</ul>
+						<ul>Systèmes d'Information d'entreprises</ul>
+						<ul>Systèmes d'Information sur Internet</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<StJeromes/>
+					</lieuEns>
+					<ref-Intervenant ref="Boucelma"/>
+				</UE>
+				<UE id="IFDOBD">
+					<nom>Initiation a la fouille de données et à l'optimisation des SGBD</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<p>Actuellement, de plus en plus de données sont conservées sans être réellement exploitées. Elles représentent pourtant une source importante d’information. La fouille de données peut-être définie comme le processus permettant d’extraire de l’information non triviale et non préalablement connue à partir des données. Dans cet enseignement, nous nous focaliserons sur l’extraction de corrélations entre les données (règle d’association, Dépendances Fonctionnelles...) et nous verrons des techniques de mesure de la qualité des données (détection et correction d’erreur).
+
+Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le lien existant entre les performances d'un SGBD et les choix d'implémentation des différents algorithmes utilisés (gestion de la concurrence, reprise sur panne, transaction...) ainsi que les différentes implémentations existantes des opérations de base des SGBD comme les jointures ou les tris accompagnés de leurs conditions d'utilisation.</p>
+					</resume>
+					<plan/>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Novelli"/>
+				</UE>
+				<UE id="IA">
+					<nom>Intelligence artificielle</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Introduction à l'IA</ul>
+						<ul>Problèmes d'espace d'états et d'exploration</ul>
+						<ul>Logiques pour l'IA et démonstration automatique</ul>
+						<ul>Représentation de connaissances</ul>
+						<ul>Actions, temps et planification</ul>
+						<ul>Programmation par contraintes et réseaux de contraintes</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Rish"/>
+				</UE>
+				<UE id="APG">
+					<nom>Algorithme a performance garantie</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Algorithmes d'approximation de nature combinatoire pour les problèmes</ul>
+						<ul>NP-complets suivants : Voyageur de Commerce, arbre de Steiner, ordonnancement de taches, clustering, p-centres, sac à dos, bin packing, couverture d'ensemble, la plus courte sur-séquence commune ;</ul>
+
+						<ul>FPTAS et PTAS (ordonnancement de taches et sac à dos) ;</ul>
+						<ul>Algorithmes d'approximation par programmation linéaire : l'arrondi et la méthode primale-duale (MAXSAT, couverture d'ensemble, multicoupes et multiflots dans les arbres) ;</ul>
+						<ul>Algorithmes en ligne et compétitivité : la pagination et les k-serveurs.</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<Luminy/>
+					</lieuEns>
+					<ref-Intervenant ref="Couetoux"/>
+				</UE>
+				<UE id="IAA">
+					<nom>Introduction a l'apprentissage automatique</nom>
+					<nbCredits>3</nbCredits>
+					<resume>
+						<ul>Introduction aux concepts de bases : formalisme statistique pour l'apprentissage supervisé (classification et régression), l'apprentissage non supervisé et l'estimation de densité</ul>
+						<ul>Arbres de décision et sélection de modèles par validation croisée.</ul>
+						<ul>Régression linéaire (une variable), méthode des moindres carrés, sélection de variables. Pointeurs vers les modèles linéaires généralisés et la parcimonie.</ul>
+						<ul>Algorithme du perceptron, perceptron à noyau. Pointeurs vers les réseaux de neurones et les séparateurs à vaste marge (SVM).</ul>
+						<ul>Réseaux de neurones. Pointeurs vers le deep learning.</ul>
+					</resume>
+					<plan>
+						<Cours>10h</Cours>
+						<TD>10h</TD>
+						<TP>10h</TP>
+					</plan>
+					<lieuEns>
+						<StJeromes/>
+					</lieuEns>
+					<ref-Intervenant ref="Denis"/>
+				</UE>
+			</Bloc>
+		</Semestre>
+	</Parcours>
+
+	<Intervenants>
+		<Intervenant id="Chepoï">
+			<nom>Chepoï</nom>
+			<adrElect>chepoi@lif.univ-mrs.fr</adrElect>
+			<adrSiteWeb>https://pageperso.lif.univ-mrs.fr/~victor.chepoi/</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Jegou">
+			<nom>Jegou</nom>
+			<adrElect>philippe.jegou@lsis.prg</adrElect>
+			<adrSiteWeb>http://www.lsis.org/philippe_jegou</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Novelli">
+			<nom>Novelli</nom>
+			<adrElect>noel.novelli@univ-amu.fr</adrElect>
+			<adrSiteWeb>http://pageperso.lif.univ-mrs.fr/~noel.novelli/</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Rish">
+			<nom>Rish</nom>
+			<adrElect>vincent.rish@univ-amu.fr</adrElect>
+			<adrSiteWeb>http://infodoc.iut.univ-aix.fr/~risch/</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Couetoux">
+			<nom>Couetoux</nom>
+			<adrElect>basile.couetoux@lif.univ-mrs.fr</adrElect>
+			<adrSiteWeb>http://pageperso.lif.univ-mrs.fr/~basile.couetoux/</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Réné">
+			<nom>Réné</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Molin">
+			<nom>Dal Molin</nom>
+			<adrElect/>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Morin">
+			<nom>Morin</nom>
+			<adrElect>remi.morin@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Arrighi">
+			<nom>Arrighi</nom>
+			<adrElect>pablo.arrighi@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Olive">
+			<nom>Olive</nom>
+			<adrElect>frederic.olive@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Godard">
+			<nom>Godard</nom>
+			<adrElect>emanuel.godard@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Santocanale">
+			<nom>Santocanale</nom>
+			<adrElect>luigi.santocanale@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Sabatier">
+			<nom>Sabatier</nom>
+			<adrElect>claude.sabatier@univ-amu.fr</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Stefanini">
+			<nom>Stefanini</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Contensin">
+			<nom>Contensin</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Niebert">
+			<nom>Niebert</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Bechet">
+			<nom>Bechet</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Reynier">
+			<nom>Reynier</nom>
+			<adrElect>pierre-alain.reynier@lif.univ-mrs.fr</adrElect>
+			<adrSiteWeb>http://pageperso.lif.univ-mrs.fr/~pierre-alain.reynier/</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Boucelma">
+			<nom>Boucelma</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Denis">
+			<nom>Denis</nom>
+			<adrElect>n/a</adrElect>
+			<adrSiteWeb>www.luminy.univ-amu.fr</adrSiteWeb>
+		</Intervenant>
+		<Intervenant id="Massat">
+			<nom>Massat</nom>
+			<adrElect>Jean-Luc.Massat@univ-amu.fr</adrElect>
+			<adrSiteWeb>http://jean-luc.massat.perso.luminy.univ-amu.fr/ens/index.html</adrSiteWeb>
+		</Intervenant>
+	</Intervenants>
+</Master>

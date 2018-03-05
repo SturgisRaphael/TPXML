@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT Master    (Parcours+, Intervenants)>
+<!ELEMENT UE		(nom, nbCredits, resume, plan, lieuEns, ref-Intervenant+)>
+
+<!ATTLIST UE	id	ID	#REQUIRED>
+
+<!ELEMENT Intervenants	(Intervenant*)>
+<!ELEMENT Intervenant	(nom, adrElect,adrSiteWeb)>
+
+<!ATTLIST Intervenant	id	ID	#REQUIRED>
+
+<!ELEMENT nom			(#PCDATA)>
+<!ELEMENT nbCredits		(#PCDATA)>
+<!ELEMENT resume		(p|ul|table)*>
+<!ELEMENT plan			(Cours?,TD?,TP?)>
+<!ELEMENT adrElect		(#PCDATA)>
+<!ELEMENT adrSiteWeb	(#PCDATA)>
+
+<!ELEMENT Cours         (#PCDATA)>
+<!ELEMENT TD            (#PCDATA)>
+<!ELEMENT TP            (#PCDATA)>
+
+<!ELEMENT lieuEns		(Luminy|StJeromes)+>
+
+<!ELEMENT Luminy		EMPTY>
+<!ELEMENT StJeromes		EMPTY>
+
+<!ELEMENT ref-Intervenant	EMPTY>
+<!ATTLIST ref-Intervenant	ref	IDREF	#REQUIRED>
+
+<!ELEMENT Parcours 		(Responsables, nom, resume, Debouches, Semestre+)>
+
+<!ELEMENT Responsables	(ref-Intervenant+)>
+
+<!ELEMENT Debouches		(Debouche*)>
+
+<!ELEMENT Debouche		(#PCDATA)>
+
+<!ELEMENT Bloc			(Type,UE+)>
+
+<!ELEMENT Type 			(Obligatoires|Optionelle)>
+
+<!ELEMENT Obligatoires	EMPTY>
+<!ELEMENT Optionelle	EMPTY>
+
+<!ELEMENT Semestre		(Bloc+)>
+
+<!ELEMENT p				(#PCDATA|b|i|tt|ul)*>
+<!ELEMENT b				(#PCDATA)>
+<!ELEMENT i				(#PCDATA)>
+<!ELEMENT tt			(#PCDATA)>
+
+<!ELEMENT table			(tr+)>
+<!ELEMENT tr			(th+|td*)>
+<!ELEMENT th			(#PCDATA)>
+<!ELEMENT td			(#PCDATA)>
+
+<!ELEMENT ul			(#PCDATA|ul)*>
+<!ELEMENT elm			(#PCDATA)>
