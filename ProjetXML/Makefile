@@ -6,7 +6,7 @@ xsd:
 
 web:
 	mkdir -p www
-	xsltproc -o www/index.html master.xsl master.xml
+	xsltproc xsl/master.xsl master.xml
 
 tidy:
 	tidy -im www/index.html

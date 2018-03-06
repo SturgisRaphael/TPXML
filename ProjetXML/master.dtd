@@ -30,6 +30,7 @@
 <!ATTLIST ref-Intervenant	ref	IDREF	#REQUIRED>
 
 <!ELEMENT Parcours 		(Responsables, nom, resume, Debouches, Semestre+)>
+<!ATTLIST Parcours      id ID #REQUIRED>
 
 <!ELEMENT Responsables	(ref-Intervenant+)>
 

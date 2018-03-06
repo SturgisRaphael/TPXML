@@ -35,7 +35,7 @@
     </xs:complexType>
     <xs:element name="Intervenants">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-Intervenant"/>
+             <xs:element minOccurs="0" maxOccurs="unbounded" ref="ref-Intervenant"/>
         </xs:sequence>
     </xs:element>
     <xs:complexType name="Intervenant">
