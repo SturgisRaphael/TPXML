@@ -21,10 +21,8 @@
 <!ELEMENT TD            (#PCDATA)>
 <!ELEMENT TP            (#PCDATA)>
 
-<!ELEMENT lieuEns		(Luminy|StJeromes)+>
-
-<!ELEMENT Luminy		EMPTY>
-<!ELEMENT StJeromes		EMPTY>
+<!ELEMENT lieu          (#PCDATA)>
+<!ELEMENT lieuEns		(lieu)+>
 
 <!ELEMENT ref-Intervenant	EMPTY>
 <!ATTLIST ref-Intervenant	ref	IDREF	#REQUIRED>
@@ -40,12 +38,12 @@
 
 <!ELEMENT Bloc			(Type,UE+)>
 
-<!ELEMENT Type 			(Obligatoires|Optionelle)>
+<!ELEMENT Type 			(#PCDATA)>
 
 <!ELEMENT Obligatoires	EMPTY>
 <!ELEMENT Optionelle	EMPTY>
 
-<!ELEMENT Semestre		(Bloc+)>
+<!ELEMENT Semestre		(nom,Bloc+)>
 
 <!ELEMENT p				(#PCDATA|b|i|tt|ul)*>
 <!ELEMENT b				(#PCDATA)>

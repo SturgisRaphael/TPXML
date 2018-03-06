@@ -14,10 +14,9 @@
 			<Debouche>Master 2</Debouche>
 		</Debouches>
 		<Semestre>
+			<nom>S1</nom>
 			<Bloc>
-				<Type>
-					<Obligatoires/>
-				</Type>
+				<Type>Obligatoires</Type>
 				<UE id="GL">
 					<nom>Genie Logiciel</nom>
 					<nbCredits>6</nbCredits>
@@ -33,7 +32,7 @@
 						<TP>20h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Arrighi"/>
 				</UE>
@@ -52,7 +51,7 @@
 						<TP>20h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Olive"/>
 				</UE>
@@ -76,7 +75,7 @@
 						<TP>20h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Godard"/>
 				</UE>
@@ -114,7 +113,7 @@ Termes formels, substitutions, filtrage</p>
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Santocanale"/>
 				</UE>
@@ -130,15 +129,13 @@ Termes formels, substitutions, filtrage</p>
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Sabatier"/>
 				</UE>
 			</Bloc>
 			<Bloc>
-				<Type>
-					<Optionelle/>
-				</Type>
+				<Type>Optionelle</Type>
 				<UE id="PL">
 					<nom>Programmation logique</nom>
 					<nbCredits>3</nbCredits>
@@ -154,7 +151,7 @@ Termes formels, substitutions, filtrage</p>
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Stefanini"/>
 				</UE>
@@ -175,7 +172,7 @@ Termes formels, substitutions, filtrage</p>
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Contensin"/>
 				</UE>
@@ -191,7 +188,7 @@ Termes formels, substitutions, filtrage</p>
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Niebert"/>
 				</UE>
@@ -209,7 +206,7 @@ Termes formels, substitutions, filtrage</p>
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Bechet"/>
 				</UE>
@@ -227,7 +224,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Reynier"/>
 				</UE>
@@ -243,17 +240,16 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Morin"/>
 				</UE>
 			</Bloc>
 		</Semestre>
 		<Semestre>
+			<nom>S2</nom>
 			<Bloc>
-				<Type>
-					<Obligatoires/>
-				</Type>
+				<Type>Obligatoires</Type>
 				<UE id="Anglais">
 					<nom>Anglais</nom>
 					<nbCredits>3</nbCredits>
@@ -266,7 +262,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Molin"/>
 				</UE>
@@ -301,7 +297,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP/>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Rene"/>
 				</UE>
@@ -318,7 +314,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Massat"/>
 				</UE>
@@ -338,7 +334,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Chepoi"/>
 				</UE>
@@ -354,15 +350,13 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Morin"/>
 				</UE>
 			</Bloc>
 			<Bloc>
-				<Type>
-					<Optionelle/>
-				</Type>
+				<Type>Optionelle</Type>
 				<UE id="TER">
 					<nom>Projet</nom>
 					<nbCredits>6</nbCredits>
@@ -371,7 +365,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 					</resume>
 					<plan/>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Jegou"/>
 				</UE>
@@ -381,16 +375,14 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 					<resume/>
 					<plan/>
 					<lieuEns>
-						<Luminy/>
-						<StJeromes/>
+						<lieu>Luminy</lieu>
+						<lieu>St Jeromes</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Jegou"/>
 				</UE>
 			</Bloc>
 			<Bloc>
-				<Type>
-					<Optionelle/>
-				</Type>
+				<Type>Optionelle</Type>
 				<UE id="AD">
 					<nom>Algorithmique distribuée</nom>
 					<nbCredits>3</nbCredits>
@@ -403,7 +395,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Couetoux"/>
 				</UE>
@@ -422,7 +414,7 @@ Pétri. Étudier la conception et la spécification des systèmes réactifs à t
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<StJeromes/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Boucelma"/>
 				</UE>
@@ -436,7 +428,7 @@ Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le l
 					</resume>
 					<plan/>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Novelli"/>
 				</UE>
@@ -457,7 +449,7 @@ Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le l
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Rish"/>
 				</UE>
@@ -478,7 +470,7 @@ Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le l
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<Luminy/>
+						<lieu>Luminy</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Couetoux"/>
 				</UE>
@@ -498,7 +490,8 @@ Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le l
 						<TP>10h</TP>
 					</plan>
 					<lieuEns>
-						<StJeromes/>
+						<lieu>Luminy</lieu>
+						<lieu>St Jeromes</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Denis"/>
 				</UE>
