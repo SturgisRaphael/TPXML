@@ -11,6 +11,7 @@
                 <html>
                     <head>
                         <title><xsl:value-of select="nom"/></title>
+                        <link rel="stylesheet" type="text/css" href="../master.css" />
                     </head>
                     <body>
                         <h1><xsl:value-of select="nom"/></h1>
@@ -36,7 +37,6 @@
                         <ul>
                             <xsl:for-each select="ref-Intervenant">
                                 <li><a href="./intervenants/{key('inter', @ref)/@id}.html"><xsl:value-of select="key('inter', @ref)/nom"/> </a></li>
-                                <!--TODO: make it work-->
                             </xsl:for-each>
                         </ul>
                     </body>

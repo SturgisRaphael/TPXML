@@ -13,7 +13,10 @@
                           doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN"
                           indent="yes">
                 <html>
-                    <head><title><xsl:value-of select="nom"/></title></head>
+                    <head>
+                        <title><xsl:value-of select="nom"/></title>
+                        <link rel="stylesheet" type="text/css" href="../master.css" />
+                    </head>
                     <body>
                         <h2  id="{@id}" ><xsl:value-of select="nom"/></h2>
                         <p>

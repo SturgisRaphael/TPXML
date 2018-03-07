@@ -9,6 +9,7 @@
             <html>
                 <head>
                     <title>Liste intervenants</title>
+                    <link rel="stylesheet" type="text/css" href="master.css" />
                 </head>
                 <body>
                     <ul>

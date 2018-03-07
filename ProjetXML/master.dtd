@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!ELEMENT Master    (Parcours+, Intervenants)>
+<!ELEMENT Master    (nom, Parcours+, Intervenants)>
+
 <!ELEMENT UE		(nom, nbCredits, resume, plan, lieuEns, ref-Intervenant+)>
 
 <!ATTLIST UE	id	ID	#REQUIRED>

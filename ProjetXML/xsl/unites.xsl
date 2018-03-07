@@ -11,11 +11,12 @@
             <html>
                 <head>
                     <title>Liste UEs</title>
+                    <link rel="stylesheet" type="text/css" href="master.css" />
                 </head>
                 <body>
                     <h2>Liste UEs et credits</h2>
-                    <table border="1" summary="UEs et credits">
-                        <tr bgcolor="#ffffff">
+                    <table summary="UEs et credits">
+                        <tr>
                             <th style="text-align:left">nom</th>
                             <th style="text-align:left">nbCredits</th>
                         </tr>

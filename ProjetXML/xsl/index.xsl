@@ -1,9 +1,5 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output
-            method="html"
-            version="4.0"
-            indent="yes"
-    />
+
     <xsl:template name="index" match="/">
         <xsl:document href="www/index.html"
                       method="xml"
@@ -14,10 +10,11 @@
 
             <html>
                 <head>
+                    <link rel="stylesheet" type="text/css" href="master.css" />
                     <title>Accueil</title>
                 </head>
                 <body>
-                    <h1>Master 1</h1>
+                    <h1>Master</h1>
                     <p>Bienvenue sur le site du master Informatique de l'universite aix-marseille.</p>
                     <ul>
                         <li><a href="unites.html">Liste des unitées</a> </li>
@@ -33,32 +30,32 @@
 
     <xsl:template name="parcours">
         <p>
-            <xsl:for-each select="Master/Parcours">
-                <a href="parcours/{@id}.html"><xsl:value-of select="nom"/></a>
-                <xsl:document href="parcours/{@id}.html">
-                    <head>
-                        <style>
+            <ul>
+                <xsl:for-each select="Master/Parcours">
+                    <li><a href="parcours/{@id}.html"><xsl:value-of select="nom"/></a></li>
+                    <xsl:document href="parcours/{@id}.html">
+                        <head>
                             table, th, td {
                             border: 1px solid black;
                             }
-                        </style>
-                    </head>
-                    <html>
-                        <body>
-                            <h1><xsl:value-of select="nom"/></h1>
-                            <h3>Resume:</h3>
-                            <p><xsl:value-of select="resume"/></p>
-                            <h3>Debouche:</h3>
-                            <ul>
-                                <xsl:for-each select="Debouches/Debouche">
-                                    <li><xsl:value-of select="."/></li>
-                                </xsl:for-each>
-                            </ul>
-                            <xsl:call-template name="Semestre"/>
-                        </body>
-                    </html>
-                </xsl:document>
-            </xsl:for-each>
+                        </head>
+                        <html>
+                            <body>
+                                <h1><xsl:value-of select="nom"/></h1>
+                                <h3>Resume:</h3>
+                                <p><xsl:value-of select="resume"/></p>
+                                <h3>Debouche:</h3>
+                                <ul>
+                                    <xsl:for-each select="Debouches/Debouche">
+                                        <li><xsl:value-of select="."/></li>
+                                    </xsl:for-each>
+                                </ul>
+                                <xsl:call-template name="Semestre"/>
+                            </body>
+                        </html>
+                    </xsl:document>
+                </xsl:for-each>
+            </ul>
         </p>
     </xsl:template>
 

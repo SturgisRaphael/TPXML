@@ -1,0 +1,37 @@
+h1 {
+    background-color: beige;
+    text-align: center;
+}
+
+body {
+    background-color: darkgray;
+}
+
+ul {
+    background: darkgray;
+    padding: 20px;
+}
+
+ul li {
+    background: #cce5ff;
+    margin: 5px;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: #212121;
+    color: white;
+}
+
+td {
+    color: darkred;
+    background-color: lightgrey;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

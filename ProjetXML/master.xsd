@@ -3,6 +3,7 @@
     <xs:element name="Master">
         <xs:complexType>
             <xs:sequence>
+                <xs:element ref="nom"/>
                 <xs:element maxOccurs="unbounded" ref="Parcours"/>
                 <xs:element ref="Intervenants"/>
             </xs:sequence>
@@ -61,13 +62,32 @@
     <xs:element name="adrElect" type="xs:string"/>
     <xs:element name="adrSiteWeb" type="xs:string"/>
     <xs:element name="Cours" type="xs:string"/>
+    <xs:simpleType name="heures">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([1-9][0-9]*h)"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="TD" type="xs:string"/>
+    <xs:simpleType name="heures">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([1-9][0-9]*h)"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="TP" type="xs:string"/>
+    <xs:simpleType name="heures">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([1-9][0-9]*h)"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:element name="lieu" type="xs:string"/>
     <xs:element name="lieuEns">
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="unbounded" ref="lieu"/>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:pattern value="Luminy"/>
+
+                    <xs:pattern value="St Jeromes"/>
+                </xs:choice>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
