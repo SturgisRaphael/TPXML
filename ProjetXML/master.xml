@@ -494,6 +494,7 @@ Par ailleurs, nous passerons du côté obscur des SGBD en mettant évidence le l
 						<lieu>St Jeromes</lieu>
 					</lieuEns>
 					<ref-Intervenant ref="Denis"/>
+					<ref-Intervenant ref="Massat"/>
 				</UE>
 			</Bloc>
 		</Semestre>

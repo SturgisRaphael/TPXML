@@ -2,7 +2,7 @@ dtd:
 	xmllint --valid --noout master.xml
 
 xsd:
-	#TODO: retrouver la bonne commande xmllint -schema --noout master.xml
+	xmllint -schema master.xsd master.xml --noout
 
 web:
 	mkdir -p www
