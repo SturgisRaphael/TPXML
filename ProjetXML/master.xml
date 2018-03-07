@@ -2,6 +2,7 @@
 <!DOCTYPE Master SYSTEM "master.dtd">
 
 <Master>
+	<nom>Informatique</nom>
 	<Parcours id="TC">
 		<Responsables>
 			<ref-Intervenant ref="Morin"/>

@@ -59,38 +59,58 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="adrElect" type="xs:string"/>
+    <xs:element name="adrElect">
+	    <xs:simpleType>
+	    	  <xs:restriction base="xs:string">
+		      <xs:pattern value="((([a-zA-Z0-9]|-)+.[a-zA-Z0-9]+@([a-zA-Z0-9]|.)+)|n/a)?"/>
+		  </xs:restriction>
+	    </xs:simpleType>
+	</xs:element>
     <xs:element name="adrSiteWeb" type="xs:string"/>
-    <xs:element name="Cours" type="xs:string"/>
-    <xs:simpleType name="heures">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="([1-9][0-9]*h)"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:element name="TD" type="xs:string"/>
-    <xs:simpleType name="heures">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="([1-9][0-9]*h)"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:element name="TP" type="xs:string"/>
-    <xs:simpleType name="heures">
-        <xs:restriction base="xs:string">
-            <xs:pattern value="([1-9][0-9]*h)"/>
-        </xs:restriction>
-    </xs:simpleType>
-    <xs:element name="lieu" type="xs:string"/>
-    <xs:element name="lieuEns">
-        <xs:complexType>
-            <xs:sequence>
-                <xs:choice maxOccurs="unbounded">
-                    <xs:pattern value="Luminy"/>
-
-                    <xs:pattern value="St Jeromes"/>
-                </xs:choice>
-            </xs:sequence>
-        </xs:complexType>
+    
+    
+    <xs:element name="Cours">
+    	  <xs:simpleType>
+		  <xs:restriction base="xs:string">
+		      <xs:pattern value="([1-9][0-9]*h)?"/>
+		  </xs:restriction>
+    	  </xs:simpleType>
     </xs:element>
+    <xs:element name="TD">
+    	  <xs:simpleType>
+		  <xs:restriction base="xs:string">
+		      <xs:pattern value="([1-9][0-9]*h)?"/>
+		  </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="TP">
+    	   <xs:simpleType>
+		  <xs:restriction base="xs:string">
+		      <xs:pattern value="([1-9][0-9]*h)?"/>
+		  </xs:restriction>
+	   </xs:simpleType>
+    </xs:element>
+    
+    
+	<xs:element name="lieu">
+	  <xs:simpleType>
+	    <xs:restriction base="xs:string">
+		<xs:enumeration value="Luminy"/>
+		<xs:enumeration value="St Jeromes"/>
+	    </xs:restriction>
+	  </xs:simpleType>
+	</xs:element>  
+    
+    <xs:element name="lieuEns">
+    	 <xs:complexType>
+    	 	<xs:sequence>
+    	 		<xs:element ref="lieu" maxOccurs="unbounded"/>
+    	 	</xs:sequence>
+    	 </xs:complexType>
+    </xs:element>
+    	    
+    
+    
     <xs:element name="ref-Intervenant">
         <xs:complexType>
             <xs:attribute name="ref" use="required" type="xs:IDREF"/>
@@ -103,7 +123,7 @@
                 <xs:element ref="nom"/>
                 <xs:element ref="resume"/>
                 <xs:element ref="Debouches"/>
-                <xs:element maxOccurs="unbounded" ref="Semestre"/>
+                <xs:element minOccurs="2" maxOccurs="2" ref="Semestre"/>
             </xs:sequence>
             <xs:attribute name="id" use="required" type="xs:ID"/>
         </xs:complexType>
